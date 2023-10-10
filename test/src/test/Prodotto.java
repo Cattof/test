@@ -1,36 +1,44 @@
 package test;
 
 public class Prodotto {
-private String Descrizione;
-private double prezzo;
-private int quantita;
+	private String descrizione;
+	private double prezzo;
+	private int quantità;
+	
+	
+	public Prodotto() {
+		super();
+	}
 
-public Prodotto(String descrizione, double prezzo, int quantita) {
-	super();
-	Descrizione = descrizione;
-	this.prezzo = prezzo;
-	this.quantita = quantita;
-}
-
-public String getDescrizione() {
-	return Descrizione;
-}
-public void setDescrizione(String descrizione) {
-	Descrizione = descrizione;
-}
-public double getPrezzo() {
-	return prezzo;
-}
-public void setPrezzo(double prezzo) {
-	if (prezzo>0)
+	public Prodotto(String descrizione, double prezzo, int quantità) {
+		super();
+		this.descrizione = descrizione;
 		this.prezzo = prezzo;
-}
-public int getQuantita() {
-	if(quantita>0)
-	return quantita;
-}
-public void setQuantita(int quantita) {
-	this.quantita = quantita;
-}
-
+		this.quantità = quantità;
+	}
+	
+	public String getDescrizione() {
+		return descrizione;
+	}
+	public void setDescrizione(String descrizione) {
+		this.descrizione = descrizione;
+	}
+	public double getPrezzo() {
+		return prezzo;
+	}
+	public void setPrezzo(double prezzo) {
+		if (prezzo>0)
+			this.prezzo = prezzo;
+	}
+	public int getQuantità() {
+		return quantità;
+	}
+	public void setQuantità(int quantità) {
+		if (quantità>0)
+			this.quantità = quantità;
+	}
+	
+	
+	
+	
 }
